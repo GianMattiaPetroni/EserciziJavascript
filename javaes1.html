@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prova Javascript</title>
+</head>
+
+<body>
+    <h1>Esercizi Javascript</h1>
+    <h3>trovare il più grande tra 5 numeri</h3>
+    <p id="numeri"></p>
+    <p id="maggiore"></p>
+    <script>
+        const numeri = [1, 36, 97, 52, 65];
+        document.getElementById("numeri").innerHTML = numeri;
+        numeri.sort(function (a, b) { return b - a });
+        document.getElementById("maggiore").innerHTML = "il maggiore tra questi numeri è: " + numeri[0];
+    </script>
+</body>
+
+</html>
