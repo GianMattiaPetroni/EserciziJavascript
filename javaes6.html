@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prova Javascript</title>
+</head>
+
+<body>
+    <h1>Esercizi Javascript</h1>
+    <h2>Scrivere un programma JavaScript che, dato un numero in input dall’utente,  stampi:
+        -“è un numero primo” se il numero dato dall’utente è un numero primo
+        -“non è un numero primo” se il numero dato dall’utente non è un numero primo
+        -“numero negativo” se il numero dato dall’utente è negativo
+        </h2>
+<script>
+    let numero = prompt("Inserisci un numero naturale: ");
+    if(numero === 1){
+        document.write("non è un numero primo");
+    }
+    if(numero > 1 && (numero%2 === 0 || numero%3 === 0 || numero%4 === 0 || numero%5 === 0 || numero%7 === 0 )&& numero != 2 && numero!=3 && numero != 4 && numero != 5 && numero != 7){
+        document.write("non è un numero primo");
+    } else if(numero < 1) {
+        document.write("numero negativo");
+    } else {
+        document.write("è un numero primo");
+    }
+
+</script>
+</body>
+</html>
