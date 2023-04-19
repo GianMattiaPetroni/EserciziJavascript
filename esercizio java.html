@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#contenitore {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  background-size: cover;
+
+
+} #contenitore img {
+    width: 100%;
+}
+</style>
+</head>
+<body>
+<h1>cambia immagine con JavaScript</h1>
+
+<button onclick="avanti()">indietro</button>
+<button onclick="indietro()">avanti</button>
+
+<div id="contenitore">
+</div>
+
+<script>
+function avanti() {
+   document.getElementById("contenitore").style.backgroundImage = "url(https://www.focusjunior.it/content/uploads/2018/06/IPA_IPA11753187.jpg)";
+}
+function indietro() {
+   document.getElementById("contenitore").style.backgroundImage = "url(https://www.ilnapolista.it/wp-content/uploads/2021/06/esult_gol_Calhanoglu__1NC5963.jpg)";
+}
+</script>
+
+</body>
+</html>

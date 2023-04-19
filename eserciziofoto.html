@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>prova HTML</title>
+</head>
+<header>
+<style type="txt/css">
+    
+
+    #contenitore { 
+    margin:0 auto;
+    padding: 0;
+    width:500px }
+ 
+    #contenitore ul { 
+    margin:0;
+    padding: 0;
+    list-style: none;
+    position: relative;}
+
+    #contenitore ul li {
+    margin:0;
+    padding: 0;
+    position: absolute;
+    padding: 0;
+    top:0;
+    left:0;
+    animation-name: animazione;
+    animation-duration: 25s;
+    animation-iteration-count: infinite; 
+    animation-delay: 0;}
+ 
+    #contenitore ul li img { width: 100%;
+        height: auto;
+    display:inline-block}
+
+        #contenitore ul li:nth-child(1){ animation-delay: 5s;}
+        #contenitore ul li:nth-child(2){ animation-delay: 10s;}
+        #contenitore ul li:nth-child(3){ animation-delay: 15s;}
+
+
+
+    
+
+    @keyframes animazione {
+        0% {opacity:0; }
+        4% {opacity:1 ;}
+        16% {opacity:1 ;}
+        24% {opacity:0 ;}
+        100% {opacity:0;}
+    
+    
+    }
+
+
+
+
+
+</style>
+</header>
+
+<body>
+    <h1>Esercizio HTML animazione</h1>
+    <div id="contenitore">
+        <ul>
+            <li><img src="https://drscdn.500px.org/photo/7579973/q%3D80_m%3D1500/v2?sig=b6344aca7cfdce2da878be684c0fd0a4dac1f5feb2d4b0a2787767233e81b862>"
+                    alt="foto"></li>
+            <li><img src="https://www.gedistatic.it/content/gedi/img/huffingtonpost/2020/04/18/232314368-8072bbbe-2d5c-44e2-9690-af8242cc87a7.jpeg"
+                    alt="fotona"></li>
+            <li><img src="https://i.pinimg.com/736x/97/80/6d/97806d9244a9c61ca2e0622c3591e8df--outline-photography-bike-photography.jpg"
+                    alt="fotone"></li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
